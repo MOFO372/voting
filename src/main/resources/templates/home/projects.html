@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Projectssssss</title>
+</head>
+<body>
+	<h1>Pick a Broject, bro.</h1>
+	<table>
+		<tr>
+			<th>Category</th>
+			<th>Name</th>
+			<th>Creator</th>
+			<th>First Choice</th>
+			<th>Second Choice</th>
+			<th>Third Choice</th>
+		</tr>	
+
+		<tr>
+			<td>{{#category}}{{ . }}{{/category}}</td>
+			<td>{{#name}}{{ . }}{{/name}}</td>
+			<td>{{#creator}}{{ . }}{{/creator}}</td>
+			<td><input type="radio" name="radio1" value="first" id="1"></td>
+			<td><input type="radio" name="radio2" value="second" id="2"></td>
+			<td><input type="radio" name="radio3" value="third" id="3"></td>
+		</tr>
+		
+	</table>
+</body>
+</html>
